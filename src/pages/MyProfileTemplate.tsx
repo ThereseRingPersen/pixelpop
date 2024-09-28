@@ -29,7 +29,7 @@ import AccessTimeFilledRoundedIcon from '@mui/icons-material/AccessTimeFilledRou
 import VideocamRoundedIcon from '@mui/icons-material/VideocamRounded';
 import InsertDriveFileRoundedIcon from '@mui/icons-material/InsertDriveFileRounded';
 import EditRoundedIcon from '@mui/icons-material/EditRounded';
-
+import BrightnessAutoRoundedIcon from "@mui/icons-material/BrightnessAutoRounded";
 import DropZone from '../components/DropZone';
 import FileUpload from '../components/FileUpload';
 import CountrySelector from '../components/CountrySelector';

@@ -9,12 +9,16 @@ import Typography from "@mui/joy/Typography";
 import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
 import ChevronRightRoundedIcon from "@mui/icons-material/ChevronRightRounded";
 import DownloadRoundedIcon from "@mui/icons-material/DownloadRounded";
+import BrightnessAutoRoundedIcon from "@mui/icons-material/BrightnessAutoRounded";
 
 import Sidebar from "../components/Sidebar";
 import OrderTable from "../components/OrderTable";
 
 import Header from "../components/Header";
 import OrderList from "../components/OrderList";
+import { IconButton } from "@mui/joy";
+import ColorSchemeToggle from "../components/ColorSchemeToggle";
+import ThemeSelector from "../components/ThemeSelector";
 
 export default function JoyOrderDashboardTemplate() {
   return (
@@ -67,6 +71,14 @@ export default function JoyOrderDashboardTemplate() {
               Orders
             </Typography>
           </Breadcrumbs>
+          <Box sx={{ display: "flex", gap: 1, alignItems: "center" }}>
+        <IconButton variant="soft" color="primary" size="sm">
+          <BrightnessAutoRoundedIcon />
+        </IconButton>
+        <Typography level="title-lg">Acme Co.</Typography>
+        <ThemeSelector></ThemeSelector>
+        <ColorSchemeToggle sx={{ ml: "auto" }} />
+      </Box>
         </Box>
         <Box
           sx={{

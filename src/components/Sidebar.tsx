@@ -27,7 +27,7 @@ import SupportRoundedIcon from "@mui/icons-material/SupportRounded";
 import SettingsRoundedIcon from "@mui/icons-material/SettingsRounded";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import LogoutRoundedIcon from "@mui/icons-material/LogoutRounded";
-import BrightnessAutoRoundedIcon from "@mui/icons-material/BrightnessAutoRounded";
+
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 import ColorSchemeToggle from "./ColorSchemeToggle";
@@ -121,14 +121,7 @@ export default function Sidebar() {
         }}
         onClick={() => closeSidebar()}
       />
-      <Box sx={{ display: "flex", gap: 1, alignItems: "center" }}>
-        <IconButton variant="soft" color="primary" size="sm">
-          <BrightnessAutoRoundedIcon />
-        </IconButton>
-        <Typography level="title-lg">Acme Co.</Typography>
-        <ThemeSelector></ThemeSelector>
-        <ColorSchemeToggle sx={{ ml: "auto" }} />
-      </Box>
+      
       <Input
         size="sm"
         startDecorator={<SearchRoundedIcon />}
