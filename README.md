@@ -25,4 +25,4 @@ Pop in, explore the themes, and maybe get inspired along the way. 🎉
 | Start the Development Server | `npm run dev`     | Starts the development server with hot-reloading. View the app at [http://localhost:5173](http://localhost:5173). |
 | Preview the Production Build | `npm run preview` | Serves the production build locally to see how the app would appear in a live environment.                        |
 | Production Build             | `npm run build`   | Compiles the TypeScript code and bundles the project for production in the `dist` folder.                         |
-| Format the Code              | `npm run format`  | Formats all files in the project using Prettier according to the configured rules, ensuring consistent style.      |
+| Format the Code              | `npm run format`  | Formats all files in the project using Prettier according to the configured rules, ensuring consistent style.     |

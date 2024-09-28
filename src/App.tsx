@@ -1,30 +1,23 @@
-import * as  React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import BarbiePage from './pages/BarbiePage';
-import NinetiesPage from './pages/NinetiesPage';
-
+import * as React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { ThemeProviderWrapper } from "./providers/ThemeContext";
+import JoyOrderDashboardTemplate from "./pages/OrdersTemplate";
+import { CssBaseline } from "@mui/joy";
+import MyProfile from "./pages/MyProfileTemplate";
 
 function App() {
   return (
-    <Router>
-      <div style={{ padding: 20 }}>
-        <h1>Welcome to PixelPop</h1>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/barbie">Barbie Theme</Link>
-            </li>
-            <li>
-              <Link to="/nineties">90's Theme</Link>
-            </li>
-          </ul>
-        </nav>
-        <Routes>
-          <Route path="/barbie" element={<BarbiePage />} />
-          <Route path="/nineties" element={<NinetiesPage />} />
-        </Routes>
-      </div>
-    </Router>
+    <ThemeProviderWrapper>
+      <CssBaseline />
+      <Router>
+        <div style={{ padding: 20 }}>
+          <Routes>
+            <Route path="/orders" element={<JoyOrderDashboardTemplate />} />
+            <Route path="/profile" element={<MyProfile/>}/>
+          </Routes>
+        </div>
+          </Router>
+    </ThemeProviderWrapper>
   );
 }
 
